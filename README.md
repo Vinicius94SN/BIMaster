@@ -2,7 +2,7 @@
 # Identificação e Previsão de Abastecimento em Papeleira
 
 #### Aluno: [Vinícius Souza Nascimento](https://github.com/Vinicius94SN)
-#### Orientador: [Manoela Kohler](https://github.com/link_do_github) e [Felipe Borges](https://github.com/FelipeBorgesC).
+#### Orientador: [Manoela Kohler](https://github.com/manoelakohler) e [Felipe Borges](https://github.com/FelipeBorgesC).
 
 ---
 
