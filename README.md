@@ -87,12 +87,29 @@ Com a alteração foi possível obter uma boa proporção entre cada comportamen
 
 #### 2.2 Modelo de Regressão
 
+O modelo de regressão irá fornecer como informação de entrada para um ponto "n" no tempo, a porcentagem do nível no momento e os 3 valores anteriores, assim como se o dia atual do ponto, anterior ou seguinte é feríado. Também será fornecido a informação de qual dia da semana é, a quantidade de pessoas que passaram desde o último abastecimento e quanto tempo faz desde o último abastecimento.
+
+Como informação de saída será fornecido ao modelo o tempo até o próximo abastecimento.
+
+O modelo:
+
+![modelos](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true)
+
+n+3, n+2, n+1, n : Como no modelo de classificação, são os valores de nível, sendo "n+3" o mais antigo
+
+dia : dia da semana (0 a 6)
+
+ontem, hj, amanha: informa com o valor "1" se é feriado ou "0" se não for.
+
+fluxo: fluxo acumulado de pessoas desde o último abastecimento até o tempo da amostra de "n"
+
+last: quanto tempo desde o último abastecimento, em horas
+
+next: quanto tempo até o próximo abastecimento, em horas
 
 ### 3. Resultados
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
 
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
 
 ### 4. Conclusões
 
