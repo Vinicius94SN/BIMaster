@@ -46,10 +46,10 @@ Sendo que o importante para o modelo é a identificação de uma mudança brusca
 
 O modelo de classificação utilizará como informação de entrada o histórico do nível para o teste e treino e, para a saída, a informação do que a série de valores de nível representa. Como exemplo de como se pode classificar o comportamento do nível se tem: 
 
-- Descida do nível
-- valor constante 
-- Oscilação de subida 
-- Oscilação de descida 
+- Descida do Nível
+- Valor Constante 
+- Oscilação de Subida 
+- Oscilação de Descida 
 - Abastecimento (Refil)
 
 Já existe um script que, utilizando diversas condições para identificar grande parte dos cenários, fornece a informação se a sequencia de valores representa um abastecimento ou outro comportamento.
