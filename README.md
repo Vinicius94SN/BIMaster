@@ -95,17 +95,19 @@ O modelo:
 
 ![modelos](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true)
 
-n+3, n+2, n+1, n : Como no modelo de classificação, são os valores de nível, sendo "n+3" o mais antigo
+Sendo:
 
-dia : dia da semana (0 a 6)
+- n+3, n+2, n+1, n : Como no modelo de classificação, são os valores de nível, sendo "n+3" o mais antigo
 
-ontem, hj, amanha: informa com o valor "1" se é feriado ou "0" se não for.
+- dia : dia da semana (0 a 6)
 
-fluxo: fluxo acumulado de pessoas desde o último abastecimento até o tempo da amostra de "n"
+- ontem, hj, amanha: informa com o valor "1" se é feriado ou "0" se não for.
 
-last: quanto tempo desde o último abastecimento, em horas
+- fluxo: fluxo acumulado de pessoas desde o último abastecimento até o tempo da amostra de "n"
 
-next: quanto tempo até o próximo abastecimento, em horas
+- last: quanto tempo desde o último abastecimento, em horas
+
+- next: quanto tempo até o próximo abastecimento, em horas
 
 ### 3. Resultados
 
