@@ -28,16 +28,16 @@ Antes de se montar o modelo é importante entender como os dados se comportam em
 
 A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao longo do tempo. A contagem se inicia meia-noite e vai aumentando gradualmente ao longo do dia até que atinge o seu pico as 23:59 e a contagem é reiniciada para o próximo dia.
 
-![fluxo_pessoas](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?token=GHSAT0AAAAAABVVGJ3QMJUWOG2PCDZJDSSGYVKJQIA)
+![fluxo_pessoas](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?)
 
 
 A base de dados sobre o percentual de papel dentro da papeleira também tem um comportamento padrão. A porcentagem de papel vai descendo ao longo do tempo até que há um um salto para 100% ou valor perto. A ocorrencia desse salto no valor é o comportamento especifico do abastecimento, porém há um problema de oscilação nos valores.
 
-![nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?token=GHSAT0AAAAAABVVGJ3QXTL5FRWGIDH3SEOMYVKJR2A)
+![nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?)
 
 Como é possível ver na imagem acima, devico a sensibilidade do sensor com a constante manuseio da papeleira, a leitura do sensor pode oscilar de forma consideravel, criando comportamentos que podem ser confundidos com abastecimentos.
 
-![mediana_nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/mediana_nivel.png?token=GHSAT0AAAAAABVVGJ3RSPN74WRJX4FPGQ5CYVKJRZQ)
+![mediana_nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/mediana_nivel.png?)
 
 Sendo que o importante para o modelo é a identificação de uma mudança brusca no nível, a base de dados será  tratada substituindo os valores brutos do nível por suas medianas. A diferença pode ser notada na imagem abaixo, onde o comportamento do gráfico continua o mesmo porém com menos oscilações nos valores.
 
@@ -56,7 +56,7 @@ Já existe um script que, utilizando diversas condições para identificar grand
 
 Em relação ao histórico do nível, será escolhido um ponto "n" na base de dados e seus 4 valores anteriores e posteriores, como representado na imagem abaixo:
 
-![histórico_nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20hist%C3%B3rico.png?token=GHSAT0AAAAAABVVGJ3Q7KEUAW2IVVD4YVP4YVKKXBQ)
+![histórico_nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20hist%C3%B3rico.png?)
 
 Onde os valores de n+1 até n+4 são os valores anteriores e n-1 a n-4 os valores seguintes.
 
@@ -64,11 +64,11 @@ Como pode ocorrer problemas de conexão ou desligamento do equipamento, o interv
 
 A imagem abaixo representa o dataframe das informações de entrada e saída (A coluna: Status) do modelo
 
-![inputs_e_outputs](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20input%20e%20output.png?token=GHSAT0AAAAAABVVGJ3RZYGKXHNZXMRNUR4OYVKK45A)
+![inputs_e_outputs](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20input%20e%20output.png?)
 
 Como não se tem dados suficientes para um grande número de exemplos de cada comportamento, serão gerados dados a partir dos já existentes. Aleatóriamente, dados já classificados irão ser escolhidos e valores pequenos (exemplo: de 1 a 5) serão adicionados ou subtraídos das colunas "n+4" até "n-4". Essa geração de dados não irá interferir com o treinamento do modelo pois o que o modelo precisa aprender é o comportamento do nível.
 
-![comportamento](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20comportamento%20do%20hist%C3%B3rico.png?token=GHSAT0AAAAAABVVGJ3Q75ZZQAX5YAOR6C4AYVKLA2Q)
+![comportamento](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20comportamento%20do%20hist%C3%B3rico.png?)
 
 Na imagem acima foi utilizado como base para a geração de dados a linha 58. Nas linhas 59 a 61 foram somados os valores 1, 2 e 3 em todas as colunas com base nos valores da linha 58, enquanto que as linhas 62 a 64 foram subtraídos os valores 1, 2 e 3. É importante notar que apesar dos valores serem um pouco diferentes do original, o seu comportamento ao longo do tempo (da coluna "n+4" até "n-4") se mantém o mesmo. Da coluna "n+4" até a coluna "n+1" os valores foram diminuindo, o que condiz com o comportamento da papeleira, até que houve uma subida repentina no valor na coluna "n" que se manteve alto nas colunas seguintes.
 
@@ -79,11 +79,11 @@ Após alguns testes do modelo se chegou na conclusão que mesmo com a geração 
 - Refil
 - Not Refil
 
-![modelos](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/cria%C3%A7%C3%A3o%20dos%20modelos.png?token=GHSAT0AAAAAABVVGJ3Q7J3MVXZFGNFODOUKYVKLN3Q)
+![modelos](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/cria%C3%A7%C3%A3o%20dos%20modelos.png?)
 
 Com a alteração foi possível obter uma boa proporção entre cada comportamento nos dados de treino e teste
 
-![modelos](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/propor%C3%A7%C3%A3o%20de%20dados.png?token=GHSAT0AAAAAABVVGJ3RCWC52KPUFBMDFMZ4YVKLOOQ)
+![modelos](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/propor%C3%A7%C3%A3o%20de%20dados.png?)
 
 #### 2.2 Modelo de Regressão
 
