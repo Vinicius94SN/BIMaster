@@ -138,7 +138,7 @@ Para o modelo de Regressão, foram utilizados os seguintes algoritmos:
 ![decision tree](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Decision%20Tree%20Regress%C3%A3o.png?raw=true)
 ![random forest](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Random%20Forest%20Regress%C3%A3o.png?raw=true)
 
-O algoritmo de Linear Regression foi o único a não conseguir representar o modelo. Em seguida foi utilizado o GridSearch para melhorar os parametros dos modelos restantes.
+O algoritmo de Linear Regression foi o único a ter um desempenho ruim com o modelo. Em seguida foi utilizado o GridSearch para melhorar os parametros dos modelos restantes.
 
 Foi possível identificar uma melhoria significativa no algoritmo XGBRegressor
 
