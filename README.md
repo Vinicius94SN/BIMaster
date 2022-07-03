@@ -151,7 +151,9 @@ Enquanto que a melhoria foi mínima ou inexistente nos demais
 
 ### 4. Conclusões
 
-O desempenho de ambos os modelos foram excelentes. Apesar da maioria dos algoritmos terem resultados satisfatórios, pelos resultados, é possível afirmar que o algoritmo de Random Forest é o melhor para o modelo de classificação, enquanto que o algoritmo de Decision Tree é o melhor para o modelo de regressão.
+Pelo resultados encontrados foi possível identificar quando há reabastecimento e prever quando será o próximo, ambos com precisão igual ou maior que 97% em diversos algoritmos. Sendo assim, ambos os objetivos propostos inicialmente foram alcançados.
+
+Em relação aos melhores algoritmos para cada modelo, apesar da maioria dos algoritmos terem resultados satisfatórios, pelos resultados, é possível afirmar que o Random Forest é o melhor para o modelo de classificação, enquanto que o Decision Tree é o melhor para o modelo de regressão.
 
 ---
 
