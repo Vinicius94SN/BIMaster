@@ -110,14 +110,48 @@ Sendo:
 - next: quanto tempo até o próximo abastecimento, em horas
 
 ### 3. Resultados
+#### 3.1 Resultados da Classificação
 
+Para o modelo de classificação, foram utilizados os seguintes algoritmos:
 
+- SVC
+- Decision Tree
+- Random Forest
+
+![svc](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/svc.png?raw=true)
+![decision tree](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/decision%20tree.png?raw=true)
+![random forest](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/random%20forest.png?raw=true)
+
+Todos os algoritmos mostraram resultados muito bons.
+
+#### 3.2 Resultados da Regressão
+
+Para o modelo de Regressão, foram utilizados os seguintes algoritmos:
+
+- Linear Regression
+- XGBRegressor
+- Random Forest
+- Decision Tree
+
+![linear regression](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Linear%20Regression.png?raw=true)
+![XGBRegressor](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/XGBR.png?raw=true)
+![decision tree](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Decision%20Tree%20Regress%C3%A3o.png?raw=true)
+![random forest](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Random%20Forest%20Regress%C3%A3o.png?raw=true)
+
+O algoritmo de Linear Regression foi o único a não conseguir representar o modelo. Em seguida foi utilizado o GridSearch para melhorar os parametros dos modelos restantes.
+
+Foi possível identificar uma melhoria significativa no algoritmo XGBRegressor
+
+![XGBRegressor](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/XGBR%20GridSearch.png?raw=true)
+
+Enquanto que a melhoria foi mínima ou inexistente nos demais
+
+![decision tree](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Decision%20Tree%20GridSearch.png?raw=true)
+![random forest](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Random%20Forest%20GridSearch.png?raw=true)
 
 ### 4. Conclusões
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pulvinar nisl vestibulum tortor fringilla, eget imperdiet neque condimentum. Proin vitae augue in nulla vehicula porttitor sit amet quis sapien. Nam rutrum mollis ligula, et semper justo maximus accumsan. Integer scelerisque egestas arcu, ac laoreet odio aliquet at. Sed sed bibendum dolor. Vestibulum commodo sodales erat, ut placerat nulla vulputate eu. In hac habitasse platea dictumst. Cras interdum bibendum sapien a vehicula.
-
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
+O desempenho de ambos os modelos foram excelentes. Apesar da maioria dos algoritmos terem resultados satisfatórios, pelos resultados, é possível afirmar que o algoritmo de Random Forest é o melhor para o modelo de classificação, enquanto que o algoritmo de Decision Tree é o melhor para o modelo de regressão.
 
 ---
 
