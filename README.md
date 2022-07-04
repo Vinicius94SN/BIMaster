@@ -1,4 +1,3 @@
-<!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
 # Identificação e Previsão de Abastecimento em Papeleira
 
 #### Aluno: [Vinícius Souza Nascimento](https://github.com/Vinicius94SN)
@@ -12,13 +11,9 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-<!-- trocar o texto abaixo pelo resumo do trabalho, em português -->
-
 O trabalho possui dois objetivos, o primeiro sendo identificar quando há abastecimento de papel em papeleiras de banheiro, por meio de uma base de dados da variação em porcentagem da quantidade de papel ao longo do tempo. O segundo objetivo é conseguir prever quando ocorrerá o próximo abastecimento, por meio do cruzamento de informações do nível do papel com a identificação de abastecimentos através do primeira etapa e uma segunda base de dados com a informação do fluxo de pessoas ao longo do tempo.
 
-### Abstract <!-- Opcional! Caso não aplicável, remover esta seção -->
-
-<!-- trocar o texto abaixo pelo resumo do trabalho, em inglês -->
+### Abstract
 
 The work has two objectives, the first being to identify when there is restock of paper towels, through a database of the variation in percentage of the amount of paper over time. The second objective is to be able to predict when the next restock will occur, by crossing information from the paper level with the identification of restocks through the first step and a second database with information on the flow of people over time.
 
