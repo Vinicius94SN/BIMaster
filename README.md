@@ -25,7 +25,6 @@ A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao long
 
 <img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="fluxo_pessoas" style="height: 300px; width:700px;"/>
 
-
 A base de dados sobre o percentual de papel dentro da papeleira também tem um comportamento padrão. A porcentagem de papel vai descendo ao longo do tempo até que há um um salto para 100% ou valor perto. A ocorrencia desse salto no valor é o comportamento especifico do abastecimento, porém há um problema de oscilação nos valores.
 
 <img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?" alt="nivel" style="height: 300px; width:700px;"/>
@@ -93,15 +92,10 @@ O modelo:
 Sendo:
 
 - n+3, n+2, n+1, n : Como no modelo de classificação, são os valores de nível, sendo "n+3" o mais antigo
-
 - dia : dia da semana (0 a 6)
-
 - ontem, hj, amanha: informa com o valor "1" se é feriado ou "0" se não for.
-
 - fluxo: fluxo acumulado de pessoas desde o último abastecimento até o tempo da amostra de "n"
-
 - last: quanto tempo desde o último abastecimento, em horas
-
 - next: quanto tempo até o próximo abastecimento, em horas
 
 ### 3. Resultados
