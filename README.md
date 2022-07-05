@@ -88,7 +88,7 @@ Como informação de saída será fornecido ao modelo o tempo até o próximo ab
 
 O modelo:
 
-<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 75px; width:600px;"/>
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 30px; width:600px;"/>
 
 Sendo:
 
@@ -128,10 +128,10 @@ Para o modelo de Regressão, foram utilizados os seguintes algoritmos:
 - Random Forest
 - Decision Tree
 
-![linear regression](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Linear%20Regression.png?raw=true)
-![XGBRegressor](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/XGBR.png?raw=true)
-![decision tree](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Decision%20Tree%20Regress%C3%A3o.png?raw=true)
-![random forest](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Random%20Forest%20Regress%C3%A3o.png?raw=true)
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Linear%20Regression.png?raw=true" alt="linear regression" style="height: 300px; width:300px;"/>
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/XGBR.png?raw=true" alt="XGBRegressor" style="height: 300px; width:300px;"/>
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Decision%20Tree%20Regress%C3%A3o.png?raw=true" alt="decision tree" style="height: 300px; width:300px;"/>
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/Random%20Forest%20Regress%C3%A3o.png?raw=true" alt="random forest" style="height: 300px; width:300px;"/>
 
 O algoritmo de Linear Regression foi o único a ter um desempenho ruim com o modelo. Em seguida foi utilizado o GridSearch para melhorar os parametros dos modelos restantes.
 
