@@ -20,7 +20,6 @@ The work has two objectives, the first being to identify when there is restock o
 ### 1. Introdução
 
 Antes de se montar o modelo é importante entender como os dados se comportam em ambas as bases de dados utilizadas.
-
 A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao longo do tempo. A contagem se inicia meia-noite e vai aumentando gradualmente ao longo do dia até que atinge o seu pico as 23:59 e a contagem é reiniciada para o próximo dia.
 <img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="fluxo_pessoas" style="height: 275px; width:700px;"/>
 
