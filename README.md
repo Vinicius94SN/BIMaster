@@ -24,8 +24,8 @@ Antes de se montar o modelo é importante entender como os dados se comportam em
 A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao longo do tempo. A contagem se inicia meia-noite e vai aumentando gradualmente ao longo do dia até que atinge o seu pico as 23:59 e a contagem é reiniciada para o próximo dia.
 
 ![fluxo_pessoas](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?)
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 250px; width:900px;"/>
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 200px; width:800px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 250px; width:700px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 200px; width:600px;"/>
 
 
 A base de dados sobre o percentual de papel dentro da papeleira também tem um comportamento padrão. A porcentagem de papel vai descendo ao longo do tempo até que há um um salto para 100% ou valor perto. A ocorrencia desse salto no valor é o comportamento especifico do abastecimento, porém há um problema de oscilação nos valores.
