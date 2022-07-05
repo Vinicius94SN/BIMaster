@@ -23,16 +23,16 @@ Antes de se montar o modelo é importante entender como os dados se comportam em
 
 A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao longo do tempo. A contagem se inicia meia-noite e vai aumentando gradualmente ao longo do dia até que atinge o seu pico as 23:59 e a contagem é reiniciada para o próximo dia.
 
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="fluxo_pessoas" style="height: 300px; width:750px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="fluxo_pessoas" style="height: 300px; width:700px;"/>
 
 
 A base de dados sobre o percentual de papel dentro da papeleira também tem um comportamento padrão. A porcentagem de papel vai descendo ao longo do tempo até que há um um salto para 100% ou valor perto. A ocorrencia desse salto no valor é o comportamento especifico do abastecimento, porém há um problema de oscilação nos valores.
 
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?" alt="nivel" style="height: 300px; width:750px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?" alt="nivel" style="height: 300px; width:700px;"/>
 
 Como é possível ver na imagem acima, devico a sensibilidade do sensor com a constante manuseio da papeleira, a leitura do sensor pode oscilar de forma consideravel, criando comportamentos que podem ser confundidos com abastecimentos.
 
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/mediana_nivel.png?" alt="mediana_nivel" style="height: 300px; width:750px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/mediana_nivel.png?" alt="mediana_nivel" style="height: 300px; width:700px;"/>
 
 Sendo que o importante para o modelo é a identificação de uma mudança brusca no nível, a base de dados será  tratada substituindo os valores brutos do nível por suas medianas. A diferença pode ser notada na imagem abaixo, onde o comportamento do gráfico continua o mesmo porém com menos oscilações nos valores.
 
@@ -137,7 +137,7 @@ O algoritmo de Linear Regression foi o único a ter um desempenho ruim com o mod
 
 Foi possível identificar uma melhoria significativa no algoritmo XGBRegressor
 
-![XGBRegressor](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/XGBR%20GridSearch.png?raw=true)
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/XGBR%20GridSearch.png?raw=true" alt="XGBRegressor" style="height: 300px; width:300px;"/>
 
 Enquanto que a melhoria foi mínima ou inexistente nos demais
 
