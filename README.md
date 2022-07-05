@@ -25,6 +25,7 @@ A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao long
 
 ![fluxo_pessoas](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?)
 <img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 250px; width:900px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 200px; width:800px;"/>
 
 
 A base de dados sobre o percentual de papel dentro da papeleira também tem um comportamento padrão. A porcentagem de papel vai descendo ao longo do tempo até que há um um salto para 100% ou valor perto. A ocorrencia desse salto no valor é o comportamento especifico do abastecimento, porém há um problema de oscilação nos valores.
