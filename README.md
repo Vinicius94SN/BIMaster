@@ -59,7 +59,7 @@ Como pode ocorrer problemas de conexão ou desligamento do equipamento, o interv
 
 A imagem abaixo representa o dataframe das informações de entrada e saída (A coluna: Status) do modelo
 
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20input%20e%20output.png?" alt="inputs_e_outputs" style="height: 300px; width:750px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20input%20e%20output.png?" alt="inputs_e_outputs" style="height: 100px; width:600px;"/>
 
 Como não se tem dados suficientes para um grande número de exemplos de cada comportamento, serão gerados dados a partir dos já existentes. Aleatóriamente, dados já classificados irão ser escolhidos e valores pequenos (exemplo: de 1 a 5) serão adicionados ou subtraídos das colunas "n+4" até "n-4". Essa geração de dados não irá interferir com o treinamento do modelo pois o que o modelo precisa aprender é o comportamento do nível.
 
@@ -88,7 +88,7 @@ Como informação de saída será fornecido ao modelo o tempo até o próximo ab
 
 O modelo:
 
-<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 300px; width:750px;"/>
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 100px; width:600px;"/>
 
 Sendo:
 
