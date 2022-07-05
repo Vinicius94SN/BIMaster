@@ -88,7 +88,7 @@ Como informação de saída será fornecido ao modelo o tempo até o próximo ab
 
 O modelo:
 
-<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 100px; width:600px;"/>
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 75px; width:600px;"/>
 
 Sendo:
 
