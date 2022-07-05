@@ -23,18 +23,16 @@ Antes de se montar o modelo é importante entender como os dados se comportam em
 
 A base de dados sobre o fluxo de pessoas possui um comportamento padrão ao longo do tempo. A contagem se inicia meia-noite e vai aumentando gradualmente ao longo do dia até que atinge o seu pico as 23:59 e a contagem é reiniciada para o próximo dia.
 
-![fluxo_pessoas](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?)
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 250px; width:700px;"/>
-<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="MarineGEO circle logo" style="height: 200px; width:600px;"/>
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/fluxo_pessoas.png?" alt="fluxo_pessoas" style="height: 300px; width:750px;"/>
 
 
 A base de dados sobre o percentual de papel dentro da papeleira também tem um comportamento padrão. A porcentagem de papel vai descendo ao longo do tempo até que há um um salto para 100% ou valor perto. A ocorrencia desse salto no valor é o comportamento especifico do abastecimento, porém há um problema de oscilação nos valores.
 
-![nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?)
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/nivel_bruto.png?" alt="nivel" style="height: 300px; width:750px;"/>
 
 Como é possível ver na imagem acima, devico a sensibilidade do sensor com a constante manuseio da papeleira, a leitura do sensor pode oscilar de forma consideravel, criando comportamentos que podem ser confundidos com abastecimentos.
 
-![mediana_nivel](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/mediana_nivel.png?)
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/mediana_nivel.png?" alt="mediana_nivel" style="height: 300px; width:750px;"/>
 
 Sendo que o importante para o modelo é a identificação de uma mudança brusca no nível, a base de dados será  tratada substituindo os valores brutos do nível por suas medianas. A diferença pode ser notada na imagem abaixo, onde o comportamento do gráfico continua o mesmo porém com menos oscilações nos valores.
 
@@ -61,7 +59,7 @@ Como pode ocorrer problemas de conexão ou desligamento do equipamento, o interv
 
 A imagem abaixo representa o dataframe das informações de entrada e saída (A coluna: Status) do modelo
 
-![inputs_e_outputs](https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20input%20e%20output.png?)
+<img src="https://raw.githubusercontent.com/Vinicius94SN/BIMaster/main/Images/exemplo%20input%20e%20output.png?" alt="inputs_e_outputs" style="height: 300px; width:750px;"/>
 
 Como não se tem dados suficientes para um grande número de exemplos de cada comportamento, serão gerados dados a partir dos já existentes. Aleatóriamente, dados já classificados irão ser escolhidos e valores pequenos (exemplo: de 1 a 5) serão adicionados ou subtraídos das colunas "n+4" até "n-4". Essa geração de dados não irá interferir com o treinamento do modelo pois o que o modelo precisa aprender é o comportamento do nível.
 
@@ -90,7 +88,7 @@ Como informação de saída será fornecido ao modelo o tempo até o próximo ab
 
 O modelo:
 
-![modelos](https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true)
+<img src="https://github.com/Vinicius94SN/BIMaster/blob/main/Images/modelo%20regress%C3%A3o.png?raw=true" alt="modelos" style="height: 300px; width:750px;"/>
 
 Sendo:
 
